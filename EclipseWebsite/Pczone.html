@@ -2,155 +2,286 @@
 <html lang="uz">
 
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>ECLIPSE PREMIUM GAMING CLUB - PC Zone</title>
-	<link rel="stylesheet" href="/EclipseWebsite/pczone.css" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PC Zone - Eclipse</title>
+	<link rel="stylesheet" href="/EclipseWebsite/pczone.css">
 </head>
 
 <body>
 
-	<!-- ===== Navbar ===== -->
+	<!-- Navbar -->
 	<nav class="navbar">
 		<div class="logo">
-			<img src="logo.png" alt="Eclipse Logo">
+			<img src="logo.png" alt="ECLIPSE Logo" class="logo-img">
 			<h1>ECLIPSE</h1>
 		</div>
 		<ul>
-			<li><a href="index.html">Bosh sahifa</a></li>
-			<li><a href="#pczone">PC Zone</a></li>
-			<li><a href="billiard.html">Billiard</a></li>
+			<li><a href="#home">Bosh sahifa</a></li>
 			<li><a href="#about">Biz haqimizda</a></li>
-			<li><a href="#gallery">Galereya</a></li>
-			<li><a href="#prices">Narxlar</a></li>
+			<li><a href="#billiard">Billiard</a></li>
+			<li><a href="#pczone">PC Zone</a></li>
 			<li><a href="#menu">Menu</a></li>
+			<li><a href="#prices">Narxlar</a></li>
+			<li><a href="#gallery">Galereya</a></li>
 			<li><a href="#contact">Contact</a></li>
 		</ul>
 	</nav>
 
-	<main>
 
-		<!-- ===== Hero Section ===== -->
-		<section class="hero" id="home">
-			<div class="hero-text">
-				<h2>WELCOME TO ECLIPSE PREMIUM GAMING CLUB</h2>
-				<p>Xivada joylashgan zamonaviy o‘yin va dam olish klubi</p>
-				<button class="hero-btn">Boshlash</button>
+
+	<!-- Hero / PC Zone -->
+	<section class="hero">
+		<h2>PC Zone o'yinlari</h2>
+	</section>
+
+	<!-- Trend Slider Top 10 -->
+	<section class="trend-section" id="games">
+		<div class="trend-slider">
+			<div class="trend-slide active">
+				<img src="https://upload.wikimedia.org/wikipedia/en/0/01/Apex_legends_cover.jpg" alt="Apex Legends">
+				<h3>Apex Legends</h3>
 			</div>
-		</section>
-
-		<!-- ===== Biz haqimizda (PC Zone) ===== -->
-		<section id="about" class="section">
-			<div class="about-section">
-				<div class="about-content hidden">
-					<h2>Biz haqimizda - PC Zone</h2>
-					<p>
-						<strong>PC Zone</strong> — bu sizga eng zamonaviy o‘yin tajribasini taqdim etadi.
-						Har bir PC yuqori sifatli uskunalar bilan jihozlangan va 24/7 ishlaydi.
-					</p>
-					<p>
-						Bizning maqsadimiz — sizga qulay, xavfsiz va professional o‘yin muhiti yaratish.
-						Do‘stlar bilan vaqt o‘tkazish yoki yangi strategiyalarni sinash uchun ideal joy.
-					</p>
-				</div>
+			<div class="trend-slide">
+				<img src="https://upload.wikimedia.org/wikipedia/en/5/5e/Call_of_Duty_Warzone.jpg" alt="COD Warzone">
+				<h3>Call of Duty: Warzone</h3>
 			</div>
-		</section>
-
-		<!-- ===== O‘yinlar bo‘limi (PC Zone) ===== -->
-		<section id="games" class="section">
-			<h2>O‘yinlar</h2>
-			<p>Bu yerda siz barcha PC Zone o‘yinlarini ko‘rishingiz mumkin (rasmlarni siz qo‘shasiz).</p>
-			<div class="pczone-images">
-				<div class="pc-img"><img src="game1.jpg" alt="O‘yin 1"></div>
-				<div class="pc-img"><img src="game2.jpg" alt="O‘yin 2"></div>
-				<!-- Siz boshqa o‘yin rasmlarini shu yerga qo‘shasiz -->
+			<div class="trend-slide">
+				<img src="https://upload.wikimedia.org/wikipedia/en/5/5e/Valorant_cover.jpg" alt="Valorant">
+				<h3>Valorant</h3>
 			</div>
-		</section>
-
-		<!-- ===== Galereya (PC Zone) ===== -->
-		<section class="main-gallery">
-			<h2 class="gallery-title" id="gallery">PC Zone Galereya</h2>
-			<div class="gallery-container">
-				<div class="gallery-item"><img src="pc1.jpg" alt="PC 1"></div>
-				<div class="gallery-item"><img src="pc2.jpg" alt="PC 2"></div>
-				<div class="gallery-item"><img src="pc3.jpg" alt="PC 3"></div>
+			<div class="trend-slide">
+				<img src="https://upload.wikimedia.org/wikipedia/en/0/0a/Dota_2_cover.jpg" alt="Dota 2">
+				<h3>Dota 2</h3>
 			</div>
-		</section>
-
-		<!-- PC Zone kartochka -->
-		<div class="price-card pc-zone hidden">
-			<h2>💻 PC ZONE</h2>
-
-			<div class="price-time">
-				<h3>🕘 Ertalabki 9:00 – Kechki 5:00</h3>
-				<p><span>STANDART:</span> 8 000 so‘m</p>
-				<p><span>VIP:</span> 12 000 so‘m</p>
-				<p><span>PRO:</span> 17 000 so‘m</p>
+			<div class="trend-slide">
+				<img src="https://upload.wikimedia.org/wikipedia/en/c/cb/Counter_Strike_2_cover.jpg" alt="CS2">
+				<h3>Counter-Strike 2</h3>
 			</div>
-
-			<div class="price-time">
-				<h3>🌆 Kechki 5:00 – Tonggi 2:00</h3>
-				<p><span>STANDART:</span> 14 000 so‘m</p>
-				<p><span>VIP:</span> 18 000 so‘m</p>
-				<p><span>PRO:</span> 25 000 so‘m</p>
+			<div class="trend-slide">
+				<img src="https://upload.wikimedia.org/wikipedia/en/5/5e/Counter-Strike.jpg" alt="Counter-Strike">
+				<h3>Counter-Strike</h3>
 			</div>
-
-			<div class="price-time">
-				<h3>🌄 Tonggi 2:00 – Ertalab 9:00</h3>
-				<p><span>STANDART:</span> 12 000 so‘m</p>
-				<p><span>VIP:</span> 16 000 so‘m</p>
-				<p><span>PRO:</span> 23 000 so‘m</p>
+			<div class="trend-slide">
+				<img src="https://upload.wikimedia.org/wikipedia/en/5/5e/World_of_Tanks_cover.jpg" alt="World of Tanks">
+				<h3>World of Tanks</h3>
+			</div>
+			<div class="trend-slide">
+				<img src="https://upload.wikimedia.org/wikipedia/en/0/0b/World_of_Warships_cover.jpg" alt="World of Warships">
+				<h3>World of Warships</h3>
+			</div>
+			<div class="trend-slide">
+				<img src="https://upload.wikimedia.org/wikipedia/en/2/28/Atomic_Heart_cover.jpg" alt="Atomic Heart">
+				<h3>Atomic Heart</h3>
+			</div>
+			<div class="trend-slide">
+				<img src="https://upload.wikimedia.org/wikipedia/en/0/0c/Blur_cover.jpg" alt="Blur">
+				<h3>Blur</h3>
 			</div>
 		</div>
+	</section>
 
-
-		<!-- ===== Menu ===== -->
-		<section id="menu" class="section">
-			<h2>Menu</h2>
-			<p>Kofe, ichimliklar, snacklar va burgerlar — barimiz sizni kutmoqda!</p>
-
-			<div class="menu-images">
-				<div class="menu-img">
-					<img src="/rasmlar/img23.jpg.jpg" alt="Menu Item 1">
-				</div>
-				<div class="menu-img">
-					<img src="/rasmlar/menu2.jpg" alt="Menu Item 2">
-				</div>
+	<!-- Game Cards -->
+	<section class="game-cards-section">
+		<div class="pczone-cards">
+			<div class="game-card" data-game="Apex Legends">
+				<img src="/images/games/Apex Legends.jpg" alt="Apex Legends">
+				<h4>Apex Legends</h4>
 			</div>
-		</section>
-		<!-- ===== Contact ===== -->
-		<section id="contact" class="section">
-			<h2>Contact</h2>
-			<p>Manzil: Xiva, Garage Burger binosi 2-3 qavat</p>
-			<p>Telefon: +998 88 862 27 27</p>
-			<p>Telegram & Instagram mavjud</p>
-
-
-			<!-- Google Map Embed -->
-			<div class="google-map">
-				<iframe
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d444.93959146281355!2d60.36393608055683!3d41.391791611388996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41dfa5903661db35%3A0x6f4c704453a72020!2sGarage%20Burger!5e0!3m2!1sru!2s!4v1761268021017!5m2!1sru!2s"
-					width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-					referrerpolicy="no-referrer-when-downgrade"></iframe>
+			<div class="game-card" data-game="Call of Duty: Warzone">
+				<img src="/images/games/Call of Duty.jpg" alt="COD Warzone">
+				<h4>Call of Duty: Warzone</h4>
 			</div>
-		</section>
+			<div class="game-card" data-game="Valorant">
+				<img src="/images/games/Valorant.jpg" alt="Valorant">
+				<h4>Valorant</h4>
+			</div>
+			<div class="game-card" data-game="Dota 2">
+				<img src="/images/games/Dota 2.jpg" alt="Dota 2">
+				<h4>Dota 2</h4>
+			</div>
+			<div class="game-card" data-game="Counter-Strike 2">
+				<img src="/images/games/Counter-Strike 2.jpg" alt="CS2">
+				<h4>Counter-Strike 2</h4>
+			</div>
+			<div class="game-card" data-game="Counter-Strike">
+				<img src="/images/games/Counter-Strike.jpg" alt="Counter-Strike">
+				<h4>Counter-Strike</h4>
+			</div>
+			<div class="game-card" data-game="World of Tanks">
+				<img src="/images/games/World of Tanks.jpg" alt="World of Tanks">
+				<h4>World of Tanks</h4>
+			</div>
+			<div class="game-card" data-game="World of Warships">
+				<img src="/images/games/World of Warships.jpg" alt="World of Warships">
+				<h4>World of Warships</h4>
+			</div>
+			<div class="game-card" data-game="Atomic Heart">
+				<img src="/images/games/Atomic Heart.jpg" alt="Atomic Heart">
+				<h4>Atomic Heart</h4>
+			</div>
+			<div class="game-card" data-game="Blur">
+				<img src="/images/games/Blur.jpg" alt="Blur">
+				<h4>Blur</h4>
+			</div>
+			<div class="game-card">
+				<img src="images/games/elden-ring.jpg" alt="Elden Ring">
+				<h3>Elden Ring</h3>
+			</div>
 
-	</main>
+			<div class="game-card">
+				<img src="images/games/cyberpunk-2077.jpg" alt="Cyberpunk 2077">
+				<h3>Cyberpunk 2077</h3>
+			</div>
 
-	<!-- ===== Footer ===== -->
-	<footer class="footer">
-		<p>&copy; 2025 Eclipse Premium Gaming Club. Barcha huquqlar himoyalangan.</p>
-	</footer>
+			<div class="game-card">
+				<img src="images/games/far-cry-4.jpg" alt="Far Cry 4">
+				<h3>Far Cry 4</h3>
+			</div>
 
-	<script>
-		const hiddenElements = document.querySelectorAll('.hidden')
-		const observer = new IntersectionObserver(entries => {
-			entries.forEach(entry => {
-				if (entry.isIntersecting) entry.target.classList.add('show')
-			})
-		})
-		hiddenElements.forEach(el => observer.observe(el));
-	</script>
+			<div class="game-card">
+				<img src="images/games/forza-horizon-5.jpg" alt="Forza Horizon 5">
+				<h3>Forza Horizon 5</h3>
+			</div>
+
+			<div class="game-card">
+				<img src="images/games/ghost-of-tsushima.jpg" alt="Ghost of Tsushima">
+				<h3>Ghost of Tsushima</h3>
+			</div>
+
+			<div class="game-card">
+				<img src="images/games/god-of-war.jpg" alt="God of War">
+				<h3>God of War</h3>
+			</div>
+
+			<div class="game-card">
+				<img src="images/games/spiderman.jpg" alt="Marvel's Spider-Man">
+				<h3>Marvel's Spider-Man</h3>
+			</div>
+
+			<div class="game-card">
+				<img src="images/games/spiderman-miles.jpg" alt="Spider-Man Miles Morales">
+				<h3>Spider-Man Miles Morales</h3>
+			</div>
+
+			<div class="game-card">
+				<img src="images/games/nfs-payback.jpg" alt="Need for Speed Payback">
+				<h3>Need for Speed Payback</h3>
+			</div>
+
+			<div class="game-card">
+				<img src="images/games/gta-v.jpg" alt="Grand Theft Auto V">
+				<h3>Grand Theft Auto V</h3>
+			</div>
+
+			<div class="game-card">
+				<img src="images/games/left-4-dead.jpg" alt="Left 4 Dead">
+				<h3>Left 4 Dead</h3>
+			</div>
+
+			<div class="game-card">
+				<img src="images/games/spiderman-remastered.jpg" alt="Spider-Man Remastered">
+				<h3>Spider-Man Remastered</h3>
+			</div>
+
+			<div class="game-card">
+				<img src="images/games/red-dead-2.jpg" alt="Red Dead Redemption 2">
+				<h3>Red Dead Redemption 2</h3>
+			</div>
+
+			<div class="game-card">
+				<img src="images/games/resident-evil-village.jpg" alt="Resident Evil Village">
+				<h3>Resident Evil Village</h3>
+			</div>
+
+			<div class="game-card">
+				<img src="images/games/resident-evil-2.jpg" alt="Resident Evil 2 Remake">
+				<h3>Resident Evil 2 Remake</h3>
+			</div>
+
+			<div class="game-card">
+				<img src="images/games/resident-evil-3.jpg" alt="Resident Evil 3 Remake">
+				<h3>Resident Evil 3 Remake</h3>
+			</div>
+
+			<div class="game-card">
+				<img src="images/games/resident-evil-4.jpg" alt="Resident Evil 4 Remake">
+				<h3>Resident Evil 4 Remake</h3>
+			</div>
+
+			<div class="game-card">
+				<img src="images/games/nfs-underground-2.jpg" alt="Need for Speed Underground 2">
+				<h3>Need for Speed Underground 2</h3>
+			</div>
+
+			<div class="game-card">
+				<img src="images/games/half-life-2.jpg" alt="Half-Life 2">
+				<h3>OLD but GOLD - Half-Life 2</h3>
+			</div>
+
+			<div class="game-card">
+				<img src="images/games/middle-earth.jpg" alt="The Battle for Middle-Earth">
+				<h3>TLoR The Battle for Middle-Earth</h3>
+			</div>
+
+			<div class="game-card">
+				<img src="images/games/middle-earth-2.jpg" alt="The Battle for Middle-Earth II">
+				<h3>TLoR The Battle for Middle-Earth II</h3>
+			</div>
+
+			<div class="game-card">
+				<img src="images/games/god-of-war-ragnarok.jpg" alt="God of War Ragnarök">
+				<h3>God of War Ragnarök</h3>
+			</div>
+
+			<div class="game-card">
+				<img src="images/games/pubg.jpg" alt="PUBG Battlegrounds">
+				<h3>PUBG Battlegrounds</h3>
+			</div>
+
+			<div class="game-card">
+				<img src="images/games/pubg-mobile.jpg" alt="PUBG Mobile">
+				<h3>PUBG Mobile</h3>
+			</div>
+
+			<div class="game-card">
+				<img src="images/games/delta-force.jpg" alt="Delta Force">
+				<h3>Delta Force</h3>
+			</div>
+
+			<div class="game-card">
+				<img src="images/games/contra-strike.jpg" alt="Contra Strike 1.6">
+				<h3>Contra Strike 1.6</h3>
+			</div>
+
+			<div class="game-card">
+				<img src="images/games/shonk.jpg" alt="Shonk!">
+				<h3>Shonk!</h3>
+			</div>
+
+			<div class="game-card">
+				<img src="images/games/middle-earth-reforged.jpg" alt="Battle for Middle-Earth Reforged">
+				<h3>Battle for Middle-Earth Reforged 5.2</h3>
+			</div>
+
+			<div class="game-card">
+				<img src="images/games/nfs-heat.jpg" alt="Need for Speed Heat">
+				<h3>Need for Speed Heat</h3>
+			</div>
+		</div>
+	</section>
+
+	<!-- Modal -->
+	<div class="game-modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<h2 id="modal-title"></h2>
+			<p id="modal-description"></p>
+			<div id="modal-images"></div>
+		</div>
+	</div>
+
+	<script src="pczone.js"></script>
 </body>
 
 </html>
