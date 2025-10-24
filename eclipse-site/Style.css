@@ -1,4 +1,4 @@
-/* Reset */
+/* Umumiy sozlamalar */
 * {
   margin: 0;
   padding: 0;
@@ -6,93 +6,140 @@
 }
 
 body {
-  background-color: #000;
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(180deg, #000010, #001b33);
   color: #fff;
-  font-family: 'Poppins', sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
-/* Kirish animatsiyasi */
-#intro {
+/* 🔹 Navbar */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: rgba(0, 0, 0, 0.75);
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
-  height: 100vh;
-  background: radial-gradient(circle at center, #0a0f1c, #000);
+  z-index: 1000;
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(0, 140, 255, 0.4);
+  box-shadow: 0 0 15px rgba(0, 140, 255, 0.2);
+}
+
+.logo-section {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  text-align: center;
-  animation: fadeIn 2s ease-in-out;
 }
 
 .logo {
-  width: 180px;
-	border-radius: 50%;
-  opacity: 0;
-  transform: scale(0.8);
-  animation: logoAppear 2s forwards;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px #00bfff;
 }
 
-@keyframes logoAppear {
-  0% { opacity: 0; transform: scale(0.7); }
-  100% { opacity: 1; transform: scale(1); }
-}
-
-.title {
-  font-size: 32px;
-  margin-top: 25px;
+.logo-text {
+  color: #4db8ff;
+  font-size: 22px;
+  margin-left: 10px;
+  font-weight: bold;
   letter-spacing: 2px;
-  text-shadow: 0 0 15px #00eaff, 0 0 30px #00aaff;
-  animation: textGlow 3s infinite alternate;
+  text-shadow: 0 0 10px #00bfff;
 }
 
-.title span {
-  display: block;
-  font-size: 20px;
-  color: #00eaff;
-  margin-top: 10px;
+nav ul {
+  display: flex;
+  list-style: none;
 }
 
-@keyframes textGlow {
-  from { text-shadow: 0 0 10px #00eaff; }
-  to { text-shadow: 0 0 30px #00eaff, 0 0 60px #00aaff; }
+nav ul li {
+  margin-left: 25px;
 }
 
-/* Tugma */
-#enter-btn {
-  margin-top: 50px;
-  padding: 10px 30px;
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+  position: relative;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #00aaff;
+  transition: 0.3s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+nav ul li a:hover {
+  color: #4db8ff;
+}
+
+/* 🔹 Hero Qismi */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  background: radial-gradient(circle at center, #001a33 0%, #000010 90%);
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.65);
+  padding: 45px 50px;
+  border-radius: 20px;
+  box-shadow: 0 0 40px #007bff;
+  animation: fadeIn 2s ease;
+  border: 1px solid rgba(0, 140, 255, 0.3);
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: #4db8ff;
+  text-shadow: 0 0 20px #007bff, 0 0 40px #00aaff;
+}
+
+.hero p {
+  margin-top: 20px;
   font-size: 18px;
-  color: #00eaff;
-  background: transparent;
-  border: 2px solid #00eaff;
-  border-radius: 30px;
-  cursor: pointer;
-  opacity: 0;
-  transition: all 0.3s;
-  animation: showButton 1s ease forwards;
-  animation-delay: 5s;
+  color: #ccc;
 }
 
-#enter-btn:hover {
-  background: #00eaff;
-  color: #000;
-  box-shadow: 0 0 20px #00eaff, 0 0 40px #00eaff;
+.btn {
+  margin-top: 35px;
+  display: inline-block;
+  padding: 12px 28px;
+  background: linear-gradient(90deg, #007bff, #00aaff);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  box-shadow: 0 0 25px #007bff;
 }
 
-@keyframes showButton {
-  to { opacity: 1; }
+.btn:hover {
+  background: linear-gradient(90deg, #00aaff, #4db8ff);
+  box-shadow: 0 0 40px #00aaff, 0 0 80px #007bff;
+  transform: scale(1.07);
 }
 
-/* Asosiy sahifa yashirin */
-.hidden {
-  display: none;
-}
-
+/* Animatsiya */
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
 }

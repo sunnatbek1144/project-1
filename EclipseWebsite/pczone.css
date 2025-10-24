@@ -1,0 +1,402 @@
+/* ===============================
+   🌑 Umumiy sozlamalar
+   =============================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #0b0d17, #000000);
+  color: white;
+  overflow-x: hidden;
+}
+
+/* ===============================
+   🚀 Navbar
+   =============================== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(10, 10, 10, 0.85);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  z-index: 100;
+  box-shadow: 0 0 20px #00b4d8;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar .logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.navbar .logo h1 {
+  color: #4cc9f0;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  text-shadow: 0 0 15px #00b4d8;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #d9faff;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #4cc9f0;
+  text-shadow: 0 0 10px #4cc9f0;
+}
+
+/* ===============================
+   🏠 Hero Section
+   =============================== */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background: linear-gradient(180deg, #0b0b0b 0%, #121212 100%);
+  color: white;
+  padding-top: 100px;
+}
+
+.hero h2 {
+  font-size: 2.8rem;
+  color: #4cc9f0;
+  text-shadow: 0 0 25px #00b4d8;
+  animation: glowText 3s infinite alternate;
+}
+
+@keyframes glowText {
+  from { text-shadow: 0 0 15px #00b4d8; }
+  to { text-shadow: 0 0 35px #00b4d8, 0 0 60px #4cc9f0; }
+}
+
+.hero p {
+  color: #d9faff;
+  font-size: 1.1rem;
+  margin: 15px 0;
+}
+
+.hero-btn {
+  background: transparent;
+  border: 2px solid #4cc9f0;
+  color: #4cc9f0;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+  background: #4cc9f0;
+  color: #0b0b0b;
+  box-shadow: 0 0 25px #4cc9f0;
+}
+
+/* ===============================
+   💬 Biz haqimizda
+   =============================== */
+.about-section {
+  text-align: center;
+  padding: 120px 20px;
+  background: linear-gradient(180deg, #111, #1a1a1a);
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  color: #ffb400;
+  text-shadow: 0 0 20px rgba(255, 180, 0, 0.5);
+  margin-bottom: 40px;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #ddd;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 1.2s ease;
+}
+
+.about-section:hover .about-content {
+  opacity: 1;
+  transform: translateY(0);
+  color: #fff;
+  text-shadow: 0 0 20px rgba(255, 180, 0, 0.3);
+}
+
+/* ===============================
+   🎮 O‘yinlar bo‘limi
+   =============================== */
+.pczone-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 50px 20px;
+}
+
+.pc-img {
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.pc-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: all 0.4s ease;
+}
+
+.pc-img:hover img {
+  filter: brightness(1.1);
+}
+
+.pc-img:hover {
+  box-shadow: 0 0 25px #4cc9f0;
+}
+
+/* ===============================
+   🖼 Galereya
+   =============================== */
+.main-gallery {
+  background: linear-gradient(135deg, #0e0e0e, #1b1b1b);
+  padding: 80px 50px;
+  text-align: center;
+  color: white;
+}
+
+.gallery-title {
+  font-size: 36px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.gallery-title::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: #f39c12;
+  display: block;
+  margin: 10px auto;
+  border-radius: 2px;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(243, 156, 18, 0.6);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+  filter: brightness(1.1);
+}
+
+/* ===============================
+   💰 Narxlar
+   =============================== */
+.price-section {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(180deg, #0a0a0a, #151515);
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #00bfff;
+  margin-bottom: 60px;
+  text-shadow: 0 0 30px #00bfff;
+  letter-spacing: 2px;
+}
+
+.price-cards {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.price-card {
+  width: 360px;
+  background: #111;
+  color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.price-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(255, 180, 0, 0.4);
+}
+
+.price-card h2 {
+  color: #ffb400;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+/* ===============================
+   ☕ Menu
+   =============================== */
+#menu {
+  padding: 120px 20px;
+  text-align: center;
+  background: linear-gradient(180deg, #101010, #1a1a1a);
+}
+
+#menu h2 {
+  font-size: 2.2rem;
+  color: #4cc9f0;
+  text-shadow: 0 0 20px #00b4d8;
+}
+
+#menu p {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.menu-item {
+  width: 250px;
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item img {
+  width:50px ;
+  height:auto;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.menu-item:hover img {
+  filter: brightness(1.1);
+}
+
+.menu-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 25px #ffb400;
+}
+
+/* ===============================
+   📞 Contact
+   =============================== */
+#contact {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(180deg, #0a0a0a, #121212);
+}
+
+#contact h2 {
+  font-size: 2.2rem;
+  color: #ffb400;
+  text-shadow: 0 0 25px #ffb400;
+  margin-bottom: 25px;
+}
+
+#contact p {
+  color: #ccc;
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.map-container {
+  margin-top: 20px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+/* ===============================
+   🔻 Footer
+   =============================== */
+.footer {
+  text-align: center;
+  padding: 30px 20px;
+  background: #111;
+  color: #fff;
+  font-size: 0.9rem;
+  border-top: 1px solid #4cc9f0;
+}
+
+/* ===============================
+   🔄 Scroll animatsiya
+   =============================== */
+.hidden {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 1s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
